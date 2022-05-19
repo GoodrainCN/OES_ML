@@ -1,12 +1,12 @@
-def dist(num):
-    
+def dist(number):
+
     num_l = 0
     num_m = 0
     num_s = 0
     
-    if num >= 4:
-        num_l = int(num/4)
-        res_p = num % 4
+    if number >= 4:
+        num_l = int(number / 4)
+        res_p = number % 4
         if res_p >= 2:
             num_m = int(res_p/2)
             res_p_ = res_p % 2
@@ -14,13 +14,13 @@ def dist(num):
                 num_s = int(res_p_ / 1)
         else:
             num_s = int(res_p / 1)
-    elif num >= 2:
-        num_m = int(num/2)
-        res_p = num % 2
+    elif number >= 2:
+        num_m = int(number / 2)
+        res_p = number % 2
         if res_p >= 1:
             num_s = int(res_p / 1)
     else:
-        num_s = int(num/1)
+        num_s = int(number / 1)
     
     str_l = ""
     str_m = ""
@@ -44,23 +44,23 @@ def dist(num):
     # print(num_l, num_m, num_s)
     
     if num_l > 0:
-        str0 = str(num_l) + " large"
+        string0 = str(num_l) + " large"
         if num_m > 0:
-            str0 = str0 + " " + str(num_m) + " medium"
+            string0 = string0 + " " + str(num_m) + " medium"
             if num_s > 0:
-                str0 = str0 + " " + str(num_s) + " small"
+                string0 = string0 + " " + str(num_s) + " small"
         elif num_s > 0:
-            str0 = str0 + " " + str(num_s) + " small"
+            string0 = string0 + " " + str(num_s) + " small"
     elif num_m > 0:
-        str0 = str(num_m) + " medium"
+        string0 = str(num_m) + " medium"
         if num_s > 0:
-            str0 = str0 + " " + str(num_s) + " small"
+            string0 = string0 + " " + str(num_s) + " small"
     elif num_s > 0:
-        str0 = str(num_s) + " small"
+        string0 = str(num_s) + " small"
     
     # str0 = str_l + str_m + str_s
     
-    return str0
+    return string0
 
 num = int(input())
 nums = []
