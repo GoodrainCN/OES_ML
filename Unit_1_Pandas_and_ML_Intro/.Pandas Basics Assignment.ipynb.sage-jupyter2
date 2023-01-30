@@ -1,0 +1,259 @@
+{"backend_state":"init","kernel":"python3","kernel_state":"idle","kernel_usage":{"cpu":0,"memory":0},"metadata":{"celltoolbar":"Slideshow","language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.8.3"}},"type":"settings"}
+{"cell_type":"code","id":"004a40","input":"sports.info()","pos":139,"type":"cell"}
+{"cell_type":"code","id":"01425f","input":"pets = pd.read_csv('data/pets.csv', index_col = 0)\npets","pos":251,"type":"cell"}
+{"cell_type":"code","id":"03a0a3","input":"live_weights.plot.hist(edgecolor=\"black\", bins=np.arange(0,16,1))\nplt.xlabel('weight')\nplt.show()","pos":206,"type":"cell"}
+{"cell_type":"code","id":"04cee5","input":"preg.columns","pos":186,"type":"cell"}
+{"cell_type":"code","id":"05a95c","input":"#insert students 4","pos":237,"type":"cell"}
+{"cell_type":"code","id":"05f5cb","input":"# insert exercise 1\n","pos":67,"slide":"skip","type":"cell"}
+{"cell_type":"code","id":"09a1ef","input":"student_info = [('Mary', 100, 62, 'F'), ('Mike', 120, 66, 'M'), ('Joe', 140, 68, 'M'), ('Janet', 110, 62, 'F'), ('Steve', 160, 70, 'M'), ('Alissa', 140, 63, 'F'), ('Alison', 140, 66, 'F'), ('Maya', 110, 63, 'F'), ('Ryan', 180, 72, 'M'), ('Paul', 190, 72, 'M'), ('Michael', 200, 73, 'M')]\nstudents = pd.DataFrame(student_info, columns = ['names', 'weight', 'height', 'gender'])\nstudents","pos":7,"slide":"slide","type":"cell"}
+{"cell_type":"code","id":"0b007f","input":"m, b = np.polyfit(ages, weights,1)\nprint(m,b)","pos":224,"type":"cell"}
+{"cell_type":"code","id":"0d8eb4","input":"pets.to_csv('data/pets.csv')","pos":249,"type":"cell"}
+{"cell_type":"code","id":"0e3b1f","input":"df['height'] = df['height'].astype(int)\ndf['weight'] = df['weight'].astype(int)\ndf","pos":119,"type":"cell"}
+{"cell_type":"code","id":"10323a","input":"w = students.weight\nh = students.height\n\nplt.plot(w,h,'.')\nplt.xlabel('weight')\nplt.ylabel('height')\nplt.show()","pos":156,"type":"cell"}
+{"cell_type":"code","id":"1046a8","input":"students.weight","pos":146,"type":"cell"}
+{"cell_type":"code","id":"1242bc","input":"students.values","pos":56,"slide":"slide","type":"cell"}
+{"cell_type":"code","id":"12ea9d","input":"# insert students 2","pos":233,"type":"cell"}
+{"cell_type":"code","id":"165edc","input":"live = live.dropna(subset=['agepreg', 'totalwgt_lb'])\nages = live.agepreg\nweights = live.totalwgt_lb","pos":215,"type":"cell"}
+{"cell_type":"code","id":"181208","input":"names = ['Mary', 'Mike', 'Joe', 'Janet', 'Steve', 'Alissa', 'Alison', 'Maya', 'Ryan', 'Paul', 'Michael']\nweight = [100, 120, 140, 110, 160, 140, 140, 110, 180, 190, 200]\nheight = [62, 66, 68, 62, 70, 63, 66, 63, 72, 72, 73]\ngender = ['F', 'M', 'M', 'F', 'M', 'F', 'F', 'F', 'M', 'M', 'M']\n\nstudents = pd.DataFrame({'names': names, 'weight': weight, 'height': height, 'gender': gender})\nstudents","pos":3,"slide":"slide","type":"cell"}
+{"cell_type":"code","id":"18f9a5","input":"students = students.append(newstudents)\nstudents","pos":99,"type":"cell"}
+{"cell_type":"code","id":"195c0e","input":"# insert students 6","pos":241,"type":"cell"}
+{"cell_type":"code","id":"19ee1b","input":"names = ['Mary', 'Mike', 'Joe', 'Janet', 'Steve', 'Alissa', 'Alison', 'Maya', 'Ryan', 'Paul', 'Michael']\nweight = [100, 120, np.nan, 110, np.nan, 140, 140, 110, 180, 190, 200]\nheight = [62, 66, 68, 62, np.nan, 63, 66, np.nan, 72, 72, 73]\nage = [16, 16, 17, 16, np.nan, 15, 15, 19, 18, 12, 16]\n\ndf = pd.DataFrame({'weight': weight, 'height': height, 'age': age}, index=names)\n\ndf = df.fillna(0)\ndf","pos":115,"type":"cell"}
+{"cell_type":"code","id":"1dea43","input":"students.tail()","pos":32,"slide":"fragment","type":"cell"}
+{"cell_type":"code","id":"251961","input":"students.weight","pos":60,"slide":"slide","type":"cell"}
+{"cell_type":"code","id":"276a06","input":"preg.head()","pos":180,"type":"cell"}
+{"cell_type":"code","id":"293229","input":"student_info = [(100, 62, 'F'), (120, 66, 'M'), (140, 68, 'M'), (110, 62, 'F'), (160, 70, 'M'), (140, 63, 'F'), (140, 66, 'F'), (110, 63, 'F'), (180, 72, 'M'), (190, 72, 'M'), (200, 73, 'M')]\nnames = ['Mary', 'Mike', 'Joe', 'Janet', 'Steve', 'Alissa', 'Alison', 'Maya', 'Ryan', 'Paul', 'Michael']\nstudents = pd.DataFrame(student_info, columns = ['weight', 'height', 'gender'], index = names)\nstudents","pos":9,"slide":"slide","type":"cell"}
+{"cell_type":"code","id":"29712a","input":"print(firsts.mean(), others.mean())","pos":210,"type":"cell"}
+{"cell_type":"code","id":"2e646c","input":"","pos":142,"type":"cell"}
+{"cell_type":"code","id":"2eb184","input":"plt.hist([firsts, others],np.arange(-.5, 15.5, 1),label=['firsts', 'others'])\nplt.xlabel('Bins', size=20)\nplt.ylabel('Frequency', size=20)\nplt.xticks(np.arange(0,15,1))\nplt.legend()\nplt.show()","pos":212,"type":"cell"}
+{"cell_type":"code","id":"34cbf0","input":"# insert exercise 7\n\n\n","pos":80,"type":"cell"}
+{"cell_type":"code","id":"363fef","input":"type(students['weight'])","pos":152,"type":"cell"}
+{"cell_type":"code","id":"398e6f","input":"sports = [('Soccer', None, 'Tennis', 'eight'), ('Soccer', None, 'Lacrosse', 5), ('Soccer', 'Basketball', 'Lacrosse', 4), (None, 'Basketball', 'Lacrosse', 2)]\nsports = pd.DataFrame(sports, index = ['Lauren', 'Paul', 'Jack', 'Lucy'], columns = ['fall', 'winter', 'spring', 'varsity letters'])\nsports","pos":135,"type":"cell"}
+{"cell_type":"code","id":"3c5c24","input":"preg.shape","pos":184,"type":"cell"}
+{"cell_type":"code","id":"46c9a5","input":"#insert more sports 2\n","pos":125,"type":"cell"}
+{"cell_type":"code","id":"4ae8c1","input":"df.info()","pos":107,"type":"cell"}
+{"cell_type":"code","id":"50253c","input":"sports['varsity letters'] = sports['varsity letters'].astype(int)\nsports.info()","pos":141,"type":"cell"}
+{"cell_type":"code","id":"515c04","input":"pets = [('Rover', 100, 'german shepard', 'dog'), ('Rex', 20, 'labrador', 'dog'), ('Polly', 5, None, 'bird'), ('Putin', 15, 'siamese', 'cat')]\npets = pd.DataFrame(pets, columns = ['names', 'weight', 'breed', 'species'])\npets","pos":247,"type":"cell"}
+{"cell_type":"code","id":"54ba64","input":"# insert students 8","pos":245,"type":"cell"}
+{"cell_type":"code","id":"55441e","input":"students.weight.value_counts()","pos":162,"type":"cell"}
+{"cell_type":"code","id":"59968e","input":"sports.loc['Lauren', 'varsity letters'] = 8\nsports","pos":137,"type":"cell"}
+{"cell_type":"code","id":"5b151a","input":"live = preg[preg.outcome == 1]","pos":192,"type":"cell"}
+{"cell_type":"code","id":"5c410e","input":"print(np.corrcoef(ages,weights))\nprint(np.corrcoef(ages,weights)[0,1])","pos":221,"type":"cell"}
+{"cell_type":"code","id":"5e885b","input":"names = ['Rover', 'Rex', 'Polly', 'Putin']\npets = [(100, 'german shepard', 'dog'), (20, 'labrador', 'dog'), (5, None, 'bird'), (15, 'siamese', 'cat')]\npets = pd.DataFrame(pets, index = names, columns = ['weight', 'breed', 'species'])\npets","pos":65,"slide":"skip","type":"cell"}
+{"cell_type":"code","id":"5ec4cd","input":"# insert exercise 3\n","pos":71,"type":"cell"}
+{"cell_type":"code","id":"61a223","input":"students.weight.plot.hist()","pos":168,"type":"cell"}
+{"cell_type":"code","id":"632a1f","input":"students.T","pos":85,"type":"cell"}
+{"cell_type":"code","id":"656867","input":"# insert students 3","pos":235,"type":"cell"}
+{"cell_type":"code","id":"65ac24","input":"newstudents = pd.DataFrame([(150, 62, 'M'), (170, 65, 'F')], columns = ['weight', 'height', 'gender'], index = ['Matt', 'Jen'])\nnewstudents","pos":97,"type":"cell"}
+{"cell_type":"code","id":"666177","input":"students.info()","pos":55,"type":"cell"}
+{"cell_type":"code","id":"69173b","input":"names = ['Mary', 'Mike', 'Joe', 'Janet', 'Steve', 'Alissa', 'Alison', 'Maya', 'Ryan', 'Paul', 'Michael']\nweight = [100, 120, np.nan, 110, np.nan, 140, 140, 110, 180, 190, 200]\nheight = [62, 66, 68, 62, np.nan, 63, 66, np.nan, 72, 72, 73]\nage = [16, 16, 17, 16, np.nan, 15, 15, 19, 18, 12, 16]\n\ndf = pd.DataFrame({'weight': weight, 'height': height, 'age': age}, index=names)\n\n\ndf = df.dropna(how='any')\ndf","pos":111,"type":"cell"}
+{"cell_type":"code","id":"6a4f43","input":"sports = [('Soccer', None, 'Tennis', 3), (None, None, None, None), ('Soccer', None, 'Lacrosse', 5), ('Soccer', 'Basketball', 'Lacrosse', 4), (None, 'Basketball', 'Lacrosse', 2)]\nsports = pd.DataFrame(sports, index = ['Lauren', 'Paul', 'Jack', 'Max', 'Lucy'], columns = ['fall', 'winter', 'spring', 'varsity letters'])\nsports","pos":121,"type":"cell"}
+{"cell_type":"code","id":"6d0e26","input":"# insert sports 1\n","pos":20,"slide":"skip","type":"cell"}
+{"cell_type":"code","id":"6e0305","input":"plt.plot(ages, weights,'.')\nplt.xlabel(\"mother's age\")\nplt.ylabel(\"birth weight\")\n","pos":217,"type":"cell"}
+{"cell_type":"code","id":"7281b6","input":"students.weight.values","pos":62,"slide":"slide","type":"cell"}
+{"cell_type":"code","id":"75704b","input":"live_weights.value_counts()","pos":202,"type":"cell"}
+{"cell_type":"code","id":"76549f","input":"pets.to_pickle('data/petpickle.pkl')","pos":253,"type":"cell"}
+{"cell_type":"code","id":"78e854","input":"students.columns","pos":53,"slide":"slide","type":"cell"}
+{"cell_type":"code","id":"807663","input":"students.sort_index(axis=0, inplace=True)\nstudents","pos":87,"type":"cell"}
+{"cell_type":"code","id":"816356","input":"print(students.weight.count())\nprint(students.weight.mean())\nprint(students.weight.std())\nprint(students.weight.min())\nprint(students.weight.median())\nprint(students.weight.max())","pos":160,"type":"cell"}
+{"cell_type":"code","id":"829ad7","input":"students = students.rename(columns={\"weight\": \"weight_lb\", \"height\": \"height_in\"})\nstudents","pos":101,"type":"cell"}
+{"cell_type":"code","id":"833a07","input":"dogs['breed'] = 'labrador'\ndogs","pos":15,"slide":"fragment","type":"cell"}
+{"cell_type":"code","id":"8659c4","input":"# insert more sports 4\n","pos":129,"type":"cell"}
+{"cell_type":"code","id":"86f32e","input":"students.sort_index(axis=1)","pos":89,"type":"cell"}
+{"cell_type":"code","id":"87b469","input":"students.head()","pos":30,"slide":"fragment","type":"cell"}
+{"cell_type":"code","id":"88ddfb","input":"students.weight.plot.hist(edgecolor=\"black\", bins=np.arange(95,205,10))","pos":170,"type":"cell"}
+{"cell_type":"code","id":"88eb8f","input":"names = ['Mary', 'Mike', 'Joe', 'Janet', 'Steve', 'Alissa', 'Alison', 'Maya', 'Ryan', 'Paul', 'Michael']\nweight = [100, 120, np.nan, 110, np.nan, 140, 140, 110, 180, 190, 200]\nheight = [62, 66, 68, 62, np.nan, 63, 66, np.nan, 72, 72, 73]\nage = [16, 16, 17, 16, np.nan, 15, 15, 19, 18, 12, 16]\n\ndf = pd.DataFrame({'weight': weight, 'height': height, 'age': age}, index=names)\ndf","pos":103,"type":"cell"}
+{"cell_type":"code","id":"8c200e","input":"live_weights.value_counts().sort_index()","pos":204,"type":"cell"}
+{"cell_type":"code","id":"8d785d","input":"# insert exercise 4\n","pos":73,"type":"cell"}
+{"cell_type":"code","id":"8f2caf","input":"students[3:7] \n","pos":36,"slide":"fragment","type":"cell"}
+{"cell_type":"code","id":"91ade0","input":"names = ['Mary', 'Mike', 'Joe', 'Janet', 'Steve', 'Alissa', 'Alison', 'Maya', 'Ryan', 'Paul', 'Michael']\nweight = [100, 120, 140, 110, 160, 140, 140, 110, 180, 190, 200]\nheight = [62, 66, 68, 62, 70, 63, 66, 63, 72, 72, 73]\ngender = ['F', 'M', 'M', 'F', 'M', 'F', 'F', 'F', 'M', 'M', 'M']\n\nstudents = pd.DataFrame({'weight': weight, 'height': height, 'gender': gender}, index = names)\n ","pos":5,"slide":"slide","type":"cell"}
+{"cell_type":"code","id":"99879b","input":"names = ['Mary', 'Mike', 'Joe', 'Janet', 'Steve', 'Alissa', 'Alison', 'Maya', 'Ryan', 'Paul', 'Michael']\nweight = [100, 120, np.nan, 110, np.nan, 140, 140, 110, 180, 190, 200]\nheight = [62, 66, 68, 62, np.nan, 63, 66, np.nan, 72, 72, 73]\nage = [16, 16, 17, 16, np.nan, 15, 15, 19, 18, 12, 16]\n\ndf = pd.DataFrame({'weight': weight, 'height': height, 'age': age}, index=names)\n\ndf['weight'] = df['weight'].fillna(np.mean(df['weight']))\ndf['height'] = df['height'].fillna(np.mean(df['height']))\ndf","pos":117,"type":"cell"}
+{"cell_type":"code","id":"998a25","input":"students.weight.value_counts(ascending = True)","pos":164,"type":"cell"}
+{"cell_type":"code","id":"9d4b54","input":"students[(students.gender == 'F') & (students.weight >= 140)]\n\n(students.gender == 'F') & (students.weight >= 140)","pos":42,"slide":"slide","type":"cell"}
+{"cell_type":"code","id":"9ddced","input":"preg.columns = preg.columns.str.strip()\npreg.columns","pos":190,"type":"cell"}
+{"cell_type":"code","id":"a079e6","input":"students['weight']","pos":148,"type":"cell"}
+{"cell_type":"code","id":"a3ad9a","input":"students.sort_values(by=['weight'], ascending = False)","pos":91,"type":"cell"}
+{"cell_type":"code","id":"a74c41","input":"students[(students.gender == 'F') | (students.weight >= 140)]","pos":44,"slide":"fragment","type":"cell"}
+{"cell_type":"code","id":"a8d9b3","input":"# insert sports 5\n","pos":28,"slide":"skip","type":"cell"}
+{"cell_type":"code","id":"a9ea95","input":"plt.plot(ages, weights,'.', alpha = 0.1)\nplt.xlabel(\"mother's age\")\nplt.ylabel(\"birth weight\")\n","pos":219,"type":"cell"}
+{"cell_type":"code","id":"afd23c","input":"# students[students.gender == 'F']\n\n# lets look closer at this\nstudents.gender == 'F'","pos":40,"slide":"fragment","type":"cell"}
+{"cell_type":"code","id":"b09730","input":"# use the students dataframe with numerical index for these\n\n# option 1\nstudents.iloc[0:3,[0,2]]\n\n# option 2\nstudents[['weight','height']][0:3]\n\n# option 3\nstudents.loc[0:3,['weight','height']]\n\n# remember shift tab for help!\n# another option to do the same\n# students\n","pos":38,"slide":"fragment","type":"cell"}
+{"cell_type":"code","id":"b2cc95","input":"firsts = live[live.birthord == 1].birthwgt_lb.dropna()\nothers = live[live.birthord != 1].birthwgt_lb.dropna()","pos":208,"type":"cell"}
+{"cell_type":"code","id":"b3f03c","input":"type(students)","pos":150,"type":"cell"}
+{"cell_type":"code","id":"b9040f","input":"len(preg)","pos":182,"type":"cell"}
+{"cell_type":"code","id":"ba037e","input":"students.iloc[8]","pos":47,"slide":"subslide","type":"cell"}
+{"cell_type":"code","id":"ba3987","input":"# insert exercise 2\n","pos":69,"type":"cell"}
+{"cell_type":"code","id":"bbac11","input":"fit = np.polyfit(ages, weights,1)\nfit_fn = np.poly1d(fit) \nplt.plot(ages, weights,'.', ages, fit_fn(ages))","pos":227,"type":"cell"}
+{"cell_type":"code","id":"bc2669","input":"# insert exercise 6\n","pos":77,"type":"cell"}
+{"cell_type":"code","id":"bda28e","input":"df.dropna(how='all', inplace=True)\ndf","pos":109,"type":"cell"}
+{"cell_type":"code","id":"bda30f","input":"# insert sports 2\n","pos":22,"slide":"skip","type":"cell"}
+{"cell_type":"code","id":"c3c773","input":"# insert more sports 5\n","pos":131,"type":"cell"}
+{"cell_type":"code","id":"c5cc27","input":"students.loc[8]['weight']","pos":51,"slide":"slide","type":"cell"}
+{"cell_type":"code","id":"c8b2c9","input":"students","pos":93,"type":"cell"}
+{"cell_type":"code","id":"cb3dce","input":"preg.columns[10:30]","pos":188,"type":"cell"}
+{"cell_type":"code","id":"ccb130","input":"student_info = [(100, 62, 'F'), (120, 66, 'M'), (140, 68, 'M'), (110, 62, 'F'), (160, 70, 'M'), (140, 63, 'F'), (140, 66, 'F'), (110, 63, 'F'), (180, 72, 'M'), (190, 72, 'M'), (200, 73, 'M')]\nnames = ['Mary', 'Mike', 'Joe', 'Janet', 'Steve', 'Alissa', 'Alison', 'Maya', 'Ryan', 'Paul', 'Michael']\nstudents = pd.DataFrame(student_info, columns = ['weight', 'height', 'gender'], index = names)\nstudents","pos":144,"type":"cell"}
+{"cell_type":"code","id":"d4eaac","input":"x = [random.randint(0,5) for x in range(100)]\ny = [random.randint(20,50) for x in range(100)]\n\n# insert random 1 below\n","pos":172,"type":"cell"}
+{"cell_type":"code","id":"d51ec5","input":"students.weight.value_counts().sort_index()","pos":166,"type":"cell"}
+{"cell_type":"code","id":"d5c620","input":"len(live)","pos":194,"type":"cell"}
+{"cell_type":"code","id":"d83011","input":"# insert random 2\n","pos":174,"type":"cell"}
+{"cell_type":"code","id":"d89ac8","input":"# insert students 5","pos":239,"type":"cell"}
+{"cell_type":"code","id":"dbc121","input":"# insert students 7","pos":243,"type":"cell"}
+{"cell_type":"code","id":"dbef64","input":"df.isnull()","pos":105,"type":"cell"}
+{"cell_type":"code","id":"dc3899","input":"dogs['color'] = ['white', 'black','black']\ndogs","pos":18,"slide":"fragment","type":"cell"}
+{"cell_type":"code","id":"ded8b1","input":"# insert exercise 5\n","pos":75,"type":"cell"}
+{"cell_type":"code","id":"df1e3c","input":"dogs.loc['Rex', 'gender'] = 'M'\ndogs.loc['Rover', 'gender'] = 'M'\ndogs.loc['Polly', 'gender'] = 'F'\ndogs","pos":13,"slide":"fragment","type":"cell"}
+{"cell_type":"code","id":"e46565","input":"pets = pd.read_pickle('data/petpickle.pkl')\npets","pos":255,"type":"cell"}
+{"cell_type":"code","id":"e4db9d","input":"dogs= pd.DataFrame(index=['Rex', 'Rover', 'Polly'], columns=['breed', 'gender', 'weight'])\ndogs","pos":11,"slide":"subslide","type":"cell"}
+{"cell_type":"code","id":"e72d8e","input":"# insert sports 4\n","pos":26,"slide":"skip","type":"cell"}
+{"cell_type":"code","id":"e78179","input":"# insert students 0","pos":229,"type":"cell"}
+{"cell_type":"code","id":"e96b71","input":"students.loc[8]['weight']\nstudents[students.names=='Ryan']","pos":49,"slide":"slide","type":"cell"}
+{"cell_type":"code","id":"eaa57b","input":"students.sort_values(by='weight', ascending = False, inplace = True)\nstudents","pos":95,"type":"cell"}
+{"cell_type":"code","id":"ecde5e","input":"# insert more sports 3\n\n","pos":127,"type":"cell"}
+{"cell_type":"code","id":"ed82ae","input":"names = ['Mary', 'Mike', 'Joe', 'Janet', 'Steve', 'Alissa', 'Alison', 'Maya', 'Ryan', 'Paul', 'Michael']\nweight = [100, 120, np.nan, 110, np.nan, 140, 140, 110, 180, 190, 200]\nheight = [62, 66, 68, 62, np.nan, 63, 66, np.nan, 72, 72, 73]\nage = [16, 16, 17, 16, np.nan, 15, 15, 19, 18, 12, 16]\n\ndf = pd.DataFrame({'weight': weight, 'height': height, 'age': age}, index=names)\n\n\ndf = df.dropna(subset = ['height', 'age'], how=\"any\")\ndf","pos":113,"type":"cell"}
+{"cell_type":"code","id":"ee3be1","input":"type(students['weight'].values)","pos":154,"type":"cell"}
+{"cell_type":"code","id":"efdafd","input":"weight = live.birthwgt_lb","pos":196,"type":"cell"}
+{"cell_type":"code","id":"f07d27","input":"students['weight']","pos":58,"slide":"slide","type":"cell"}
+{"cell_type":"code","id":"f1139e","input":"import pandas as pd \nimport numpy as np \nimport random \nimport matplotlib.pyplot as plt \n%matplotlib inline ","pos":1,"slide":"slide","type":"cell"}
+{"cell_type":"code","id":"f158ea","input":"students.describe()","pos":158,"type":"cell"}
+{"cell_type":"code","id":"f17044","input":"#insert sports 3\n","pos":24,"slide":"skip","type":"cell"}
+{"cell_type":"code","id":"f2352c","input":"live_weights = weight.dropna()\nprint(len(live_weights))","pos":198,"type":"cell"}
+{"cell_type":"code","id":"f85371","input":"# insert students 1","pos":231,"type":"cell"}
+{"cell_type":"code","id":"f8a648","input":"live_weights.describe()","pos":200,"type":"cell"}
+{"cell_type":"code","id":"fa9966","input":"students.info()","pos":34,"slide":"skip","type":"cell"}
+{"cell_type":"code","id":"fd4513","input":"# insert random 3\n","pos":176,"type":"cell"}
+{"cell_type":"code","id":"fdce10","input":"student_info = [(100, 62, 'F'), (120, 66, 'M'), (140, 68, 'M'), (110, 62, 'F'), (160, 70, 'M'), (140, 63, 'F'), (140, 66, 'F'), (110, 63, 'F'), (180, 72, 'M'), (190, 72, 'M'), (200, 73, 'M')]\nnames = ['Mary', 'Mike', 'Joe', 'Janet', 'Steve', 'Alissa', 'Alison', 'Maya', 'Ryan', 'Paul', 'Michael']\nstudents = pd.DataFrame(student_info, columns = ['weight', 'height', 'gender'], index = names)\nstudents","pos":83,"slide":"fragment","type":"cell"}
+{"cell_type":"code","id":"fdd09c","input":"#insert more sports 1\n","pos":123,"type":"cell"}
+{"cell_type":"code","id":"feeb4f","input":"#insert more sports 6\n","pos":133,"type":"cell"}
+{"cell_type":"code","id":"ff29f2","input":"preg = pd.read_csv('data/2002FemPreg.csv', index_col = 0)","pos":178,"type":"cell"}
+{"cell_type":"markdown","collapsed":true,"id":"b8edbc","input":"Creating DataFrames in Pandas\n---\n<a class=\"anchor\" id=\"create\"></a>\n\nPandas is a library that provides data structures and data analysis tools that will be very helpful to us.\n\nConsider the student data below:\n\nStudent\tWeight\tHeight\tGender\n\nMary\t100\t    62\t    Female\n\nMike\t120\t    66\t    Male\n\nJoe\t    140\t    68\t    Male\n\nJanet\t110\t    62\t    Female\n \nSteve\t160\t    70\t    Male\n\nAlissa\t140\t    63\t    Female\n\nAlison\t140\t    66\t    Female\n\nMaya\t110\t    63\t    Female\n\nRyan\t180\t    72\t    Male\n\nPaul\t190\t    72\t    Male\n\nMichael\t200\t    73\t    Male\n\n\n\n\nPretty soon, we will want to work with data much larger and more interesting than 11 students. We will first want to create a data frame, which is a data structure in pandas. \n\nOne way of doing this is to first create separate lists for the names, weights, height, and gender, and then make a data frame using a dictionary. ","pos":2,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"008d85","input":"### Exercise - pets 5\nPrint just the animals' breeds and species in one line.","pos":74,"type":"cell"}
+{"cell_type":"markdown","id":"0170fe","input":"Contents\n---\n- [Creating DataFrames in Pandas](#create)\n- [Viewing DataFrame info](#view)\n- [Transforming DataFrames](#transform)\n- [Series and Plots](#series)\n- [Summary Statistics](#summary)\n- [Reading CSV files](#csv)\n- [Pickling](#pickling)\n\nRun the following cell to import the required packages:","pos":0,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"035e65","input":"### Exercise - pets 1\nUse a built-in command to figure out how many blank entries are in your data frame in one line.","pos":66,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"06b2c1","input":"Note that sorting the students did not permanently change the order of the data frame:","pos":92,"type":"cell"}
+{"cell_type":"markdown","id":"074962","input":"### Exercise -  sports 1\nCreate a dataframe called sports. It should have three kids in it. The index should be the numeric values 0,1,2. There should be columns for the student's first name and separate columns for their fall, winter, and spring sport.","pos":19,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"086c3a","input":"If we want to view the data type of each column in our data frame, and figure out many values might be empty, we can type:","pos":33,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"08b2b4","input":"If we wanted to sort in ascending order of weight, we could type:","pos":165,"type":"cell"}
+{"cell_type":"markdown","id":"098372","input":"Since this value is close to 0, this is further indiciation that there may not be a correlation between mother's age and baby's birth weight.","pos":222,"type":"cell"}
+{"cell_type":"markdown","id":"0a18f2","input":"To sort by column names, type:","pos":88,"type":"cell"}
+{"cell_type":"markdown","id":"0dc13a","input":"And then append these new students to the original table:","pos":98,"type":"cell"}
+{"cell_type":"markdown","id":"0e0320","input":"Actually, perhaps we would prefer each row to be labeled by the student's name instead of the numbers 0 - 10. In that case, we'll store the names in a separate list and label them as our index:","pos":8,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"11716b","input":"Are we sure that we created the file? Yes, because we can read it back in and view its contents:","pos":250,"type":"cell"}
+{"cell_type":"markdown","id":"11e5ea","input":"If we only wanted to view students who were girls OR weighed at least 140, we could type:","pos":43,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"132865","input":"### Exercise - More Sports 5\nPrint Jack's winter sport.","pos":130,"type":"cell"}
+{"cell_type":"markdown","id":"193b2a","input":"Another thing that you'll definitely want to do at some point is sort data. Suppose we wanted to sort the data so that the names were in alphabetical order. Using sort with axis = 0 refers to sorting the row names and axis = 1 refers to sorting by column names. If we want to alphabetize the rows we could type:","pos":86,"type":"cell"}
+{"cell_type":"markdown","id":"1b8f11","input":"If we wanted to fill in an entire column with the same value, we could type:","pos":14,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"1df6fc","input":"Let's give the histogram a bit more structure than just whatever the default values are. Note that since the weights are between 100-200 in increments of 10, to center each bar around the weight, I'll start at 95, end at 205, and increment by 10. Also, I'll make a black edge color to show separation between the bars:","pos":169,"type":"cell"}
+{"cell_type":"markdown","id":"1f1471","input":"Often, some columns will contain a bit of whitespace at the end of the column name. For example, you could get tripped up for hours if the \"age\" column really was stored as \"age \" with an invisible space at the end. Therefore, it's a good habit to always first strip away any whitespace from the column names before you start working with the dataset:","pos":189,"type":"cell"}
+{"cell_type":"markdown","id":"1f6d90","input":"### Exercises - students 5\nMake a plot of student height versus student weight.","pos":238,"type":"cell"}
+{"cell_type":"markdown","id":"211e14","input":"We could also use shape to see that there are 13593 rows and 244 columns:","pos":183,"type":"cell"}
+{"cell_type":"markdown","id":"282c89","input":"If we wanted to see the weight and gender of the first three students, we could type the following (since weight and gender are stored in the 0th and 2nd columns):","pos":37,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"297739","input":"To go in ascending order of frequency, type:","pos":163,"type":"cell"}
+{"cell_type":"markdown","id":"2fec00","input":"It doesn't seem from the graph that there is a clear nonzero slope trend in the data. To confirm, we can calculate the correlation coefficient. Note that np.corrcoef actually returns a matrix but for our purposes, we only care about the entry that is in the top right entry which can be referenced as 0th row 1st column:","pos":220,"type":"cell"}
+{"cell_type":"markdown","id":"2fff99","input":"### Exercise - More sports 1\nDelete unathletic Paul from the data set since all of his sports are listed as null.","pos":122,"type":"cell"}
+{"cell_type":"markdown","id":"322fba","input":"### Exercise - pets 7","pos":78,"type":"cell"}
+{"cell_type":"markdown","id":"32ba68","input":"Here, NaN stands for \"not a number\", since we haven't added any data yet. We could insert data into each entry:","pos":12,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"34c308","input":"There are 9148 items in this list, but some of the data might be missing. To limit our calculations to weights that were listed, we can type:","pos":197,"type":"cell"}
+{"cell_type":"markdown","id":"360d88","input":"We can see that 64 missing values have been removed. Okay, now we can see a summary of birth weight info:","pos":199,"type":"cell"}
+{"cell_type":"markdown","id":"36489b","input":"Since there are so many data points, it helps to make points that are clustered closely appear darker. To do this, play around with using an alpha value between 0 and 1:","pos":218,"type":"cell"}
+{"cell_type":"markdown","id":"365d47","input":"Or, we could individually find important values:","pos":159,"type":"cell"}
+{"cell_type":"markdown","id":"371c35","input":"### Exercise - More Sports 3\nSort the dataframe by student name.","pos":126,"type":"cell"}
+{"cell_type":"markdown","id":"378fa9","input":"Hmm. It looks like others may weigh a bit more. Let's make a comparative histogram:","pos":211,"type":"cell"}
+{"cell_type":"markdown","id":"37b1f7","input":"To get just the weights, we have a few options. We can type:","pos":57,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"37b658","input":"Lastly, what if you wanted to change the column names from weight and height to weight_lb and height_in, respectively, to denote units?","pos":100,"type":"cell"}
+{"cell_type":"markdown","id":"3cda98","input":"### Exercise - random 3\nFind the mean, median, and standard deviation of the x list.","pos":175,"type":"cell"}
+{"cell_type":"markdown","id":"440538","input":"To get each row of data, type:","pos":54,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"45d4db","input":"We can change it as follows:","pos":136,"type":"cell"}
+{"cell_type":"markdown","id":"46227c","input":"One of the variables is pregnancy outcome - if the baby is carried to term (i.e., no miscarriages or still births), this variable is stored as \"1\".  Let's limit our calculations below to live births by doing the following:","pos":191,"type":"cell"}
+{"cell_type":"markdown","id":"470147","input":"If instead we wanted to sort by weight, from biggest to smallest, we could type:","pos":90,"type":"cell"}
+{"cell_type":"markdown","id":"477d09","input":"If we want to graph mother's age versus weight, we can type:","pos":216,"type":"cell"}
+{"cell_type":"markdown","id":"4ad9b6","input":"Or, we can type:","pos":61,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"4e78d9","input":"In some cases, filling missing data in with 0 might be exactly what you want to do. For example, if colleges were supposed to report what percentage of their students graduated, but a few colleges did not, you might want to penalize them with \"0\" because their lack of information might suggest some shadiness going on. However, in many other cases, you would prefer to just fill in the missing data with whatever the average of that columns' non-null values are. We will do this next:","pos":116,"type":"cell"}
+{"cell_type":"markdown","id":"4ead10","input":"Often, we'll only want to look at data that satisifies certain criteria. In that case, we can introduce Boolean indexing, so that only data that satisfies the conditions gets viewed. For example, suppose we only want to print the info for the females. We could type:","pos":39,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"517abb","input":"If we want to create a histogram to view the frequencies, we can type the following.","pos":167,"type":"cell"}
+{"cell_type":"markdown","id":"519bad","input":"How do know what the column names are?","pos":185,"type":"cell"}
+{"cell_type":"markdown","id":"5305e9","input":"### Missing Data\nNotice that there are some missing values in the table below:","pos":102,"type":"cell"}
+{"cell_type":"markdown","id":"539f5c","input":"We can check which values are null by typing:","pos":104,"type":"cell"}
+{"cell_type":"markdown","id":"546dc2","input":"If we want to plot the linear regression line, we can type:","pos":226,"type":"cell"}
+{"cell_type":"markdown","id":"56a93e","input":"Suppose we are wondering whether first borns weight less than their later siblings. Let's save first borns and later siblings into different variables based on birth order:","pos":207,"type":"cell"}
+{"cell_type":"markdown","id":"56e382","input":"Note that the data type of students is DataFrame.","pos":149,"type":"cell"}
+{"cell_type":"markdown","id":"5b5f3b","input":"### Exercise - sports 5\nChange everyone's fall sport to soccer using one command.","pos":27,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"5b711d","input":"Transforming the data\n---\n<a class=\"anchor\" id=\"transform\"></a>\n\n","pos":81,"type":"cell"}
+{"cell_type":"markdown","id":"5b8c75","input":"One of the variables is birth weight in pounds. Suppose we are interested in plotting a histogram of these weights. We can first save a weight variable as:","pos":195,"type":"cell"}
+{"cell_type":"markdown","id":"5c6b1f","input":"If you want the change to be permanent, you can re-save students as:\n\n\nstudents = students.sort_values(...) \n\nOr you can include the argument \"inplace = True\":","pos":94,"type":"cell"}
+{"cell_type":"markdown","id":"622f10","input":"Let's create our student data frame again:","pos":82,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"63c06a","input":"What is the mean birth weight of each?","pos":209,"type":"cell"}
+{"cell_type":"markdown","id":"671a7a","input":"We can save the students' weight and height in variables w and h and then plot them:","pos":155,"type":"cell"}
+{"cell_type":"markdown","id":"676ded","input":"Notice that this changed our column types from integers to floats (decimals). If we wanted to change it back, we could use astype:","pos":118,"type":"cell"}
+{"cell_type":"markdown","id":"68489d","input":"### Exercise - pets 2 \nPrint the column names in your data frame.","pos":68,"type":"cell"}
+{"cell_type":"markdown","id":"69d19c","input":"We can plot a histogram:","pos":205,"type":"cell"}
+{"cell_type":"markdown","id":"6a39e2","input":"We can add another column to our dog dataframe after creating it. If we want a new column to include dog colors, we can type:","pos":17,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"6ad016","input":"### Exercises - students 2\nView the GIRLS who weigh less than 110.","pos":232,"type":"cell"}
+{"cell_type":"markdown","id":"6b2db4","input":"However, let's notice that the varsity letters column type is still an object (or string) as opposed to a numeric variable:","pos":138,"type":"cell"}
+{"cell_type":"markdown","id":"6d28f0","input":"Suppose we wanted Ryan's weight. We could type:","pos":50,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"6dc5c6","input":"\"iloc\" refers to the index position. If we wanted to look Ryan's info up by his label, we could use \"loc\":","pos":48,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"712b77","input":"## More data cleaning\n\nSometimes, you may want to change an entry. For example, we would like the word \"eight\" to be a numeric 8:","pos":134,"type":"cell"}
+{"cell_type":"markdown","id":"729731","input":"If we wanted to add another two students to the data, we could first make a new DataFrame for the new students:","pos":96,"type":"cell"}
+{"cell_type":"markdown","id":"74c714","input":"Or to print the last few rows, type:","pos":31,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"75a5e7","input":"### Exercise - More Sports 2\nFill in the missing fall sports with the sport \"weight lifting\" and the missing winter sports with \"yoga\" using \"fillna\".","pos":124,"type":"cell"}
+{"cell_type":"markdown","id":"777f5d","input":"The data type of their weight is a Series:","pos":151,"type":"cell"}
+{"cell_type":"markdown","id":"7a54f0","input":"We'll discuss what to do later when not all of the entries have values.","pos":16,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"7f7e2e","input":"Recall what this means: for every 1 year increase in the woman's age, a linear model predicts that the baby's weight goes up by 0.017 pounds. ","pos":225,"type":"cell"}
+{"cell_type":"markdown","id":"861287","input":"The data type of weight.values is a NumPy array:","pos":153,"type":"cell"}
+{"cell_type":"markdown","id":"8896bf","input":"### Exercises - pets\nFor the following exercises, use the pets dataframe below.","pos":64,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"8c7b31","input":"Recall that \"Ryan\" was located in the 9th row (in the index 8). We could get his info this way:","pos":46,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"913e47","input":"### Exercise - pets 6\nPrint all of the info for the animals that are dogs in one line.","pos":76,"type":"cell"}
+{"cell_type":"markdown","id":"941fee","input":"### Exercises - More sports\nFor the exercises below, use the following data frame.","pos":120,"type":"cell"}
+{"cell_type":"markdown","id":"9467b1","input":"Or, as another option, we could make tuples of each students' info and then specify the column names:","pos":6,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"9675eb","input":"If we only wanted to view the info for students who were girls AND weighed at least 140, we could type:","pos":41,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"968525","input":"### Exercise - More Sports 6\nPrint just the students who play soccer in the fall.","pos":132,"type":"cell"}
+{"cell_type":"markdown","id":"98b3a8","input":"Note: In Python you can use the words \"and\" and \"or\", but in Pandas you must use \"&\" and \"|\" to denote them or else you'll get an error.","pos":45,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"9a40fb","input":"Pickling\n---\n<a class=\"anchor\" id=\"pickling\"></a>\n\nOne last thing. Many times, we'll create dataframes in Pandas that we want to use later. We'd like to store them for safe keeping. For example, let's store our pets dataframe below:","pos":246,"type":"cell"}
+{"cell_type":"markdown","id":"9d9641","input":"And, we can view a frequency chart:","pos":201,"type":"cell"}
+{"cell_type":"markdown","id":"a0518d","input":"Actually, an even faster way to spot which columns have missing values and how many they have is using \"info\". We see that the weight and height columns have two missing values each:","pos":106,"type":"cell"}
+{"cell_type":"markdown","id":"a079fe","input":"How many births are we considering?","pos":193,"type":"cell"}
+{"cell_type":"markdown","id":"a534d0","input":"### Exercise - More Sports 4\nSort the dataframe by varsity letters in decending order.","pos":128,"type":"cell"}
+{"cell_type":"markdown","id":"abab8c","input":"### Exercise - random 1\nBelow is a way to use list comprehensions to save 100 random integers between [0,5] in a list called x and 100 random integers between [20,50] in a list called y. Store these lists in a data frame called df where the name of the first column is x and the name of the second column is y. ","pos":171,"type":"cell"}
+{"cell_type":"markdown","id":"ada9a9","input":"If instead we wanted the index to be the student name, we could specify that:","pos":4,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"ade658","input":"We can sort this by weight:","pos":203,"type":"cell"}
+{"cell_type":"markdown","id":"b12a66","input":"Later when you learn more statistics, you can use a two-sample t-test to conclude whether the difference between first-born and later siblings' weights are actually statistically significant.","pos":213,"type":"cell"}
+{"cell_type":"markdown","id":"b1d351","input":"Then to view the beginning of the file, type:","pos":179,"type":"cell"}
+{"cell_type":"markdown","id":"b65861","input":"The above table is a DataFrame, which is a data type in Pandas. Each of the columns are a Series, which is another data type. Remember that we can refer to the weight column series in two different ways. The first way is:","pos":145,"type":"cell"}
+{"cell_type":"markdown","id":"b6ac32","input":"Or, we can type:","pos":59,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"b735e7","input":"### Exercises - students 0\nRead in the file students' weight, height, and gender contained in the file students.csv. Strip away any whitespace from the column names.","pos":228,"type":"cell"}
+{"cell_type":"markdown","id":"b87684","input":"Note that there are so many that you won't be able to view all of them. If you wanted to view the 10th through 30th column names, you could type:","pos":187,"type":"cell"}
+{"cell_type":"markdown","id":"bd77f5","input":"### Exercises - students 4\nMake a frequency chart of the student weights, in ascending order of weight.","pos":236,"type":"cell"}
+{"cell_type":"markdown","id":"bf27ef","input":"### Exercises - students 6\nWhat is the mean girl weight? The mean boy weight?","pos":240,"type":"cell"}
+{"cell_type":"markdown","id":"bf75a3","input":"We see that the are 244 different attributes stored for each birth. How many births are contained in this dataframe?","pos":181,"type":"cell"}
+{"cell_type":"markdown","id":"c0ba73","input":"If we wanted to find the linear regression coefficients, we could type:","pos":223,"type":"cell"}
+{"cell_type":"markdown","id":"c57acf","input":"Print all of the info for the animals that are dogs OR the animals that weigh less than 10 pounds.","pos":79,"type":"cell"}
+{"cell_type":"markdown","id":"c65a7f","input":"Be careful of the difference between typing students.weight and students.weight.values. \n\nstudents.weight returns the info in a datatype called a Series (see that there are two columns that get printed - the first is an index). \n\nstudents.weight.values returns the info in a list (more specifically, a numpy array).","pos":63,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"c9ed66","input":"### Exercise - pets 3\nPrint just Rex's info.","pos":70,"type":"cell"}
+{"cell_type":"markdown","id":"caf425","input":"To read your dataframe back in, type:","pos":254,"type":"cell"}
+{"cell_type":"markdown","id":"cc0370","input":"If instead we wanted to drop rows that had ANY data missing, we would you the keyword \"any\":","pos":110,"type":"cell"}
+{"cell_type":"markdown","id":"cd16ab","input":"### Exercise - pets 4\nPrint just Polly's weight by using a.) loc and b.) iloc.","pos":72,"type":"cell"}
+{"cell_type":"markdown","id":"d244ff","input":"Another way to create a DataFrame is to create an empty data frame and then fill in values. For example, suppose I wanted to create a data frame of pet names, their breed, their gender, and their weight. I could type:","pos":10,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"d30a29","input":"### Exercises - students 7\nWhich gender has a larger weight spread?  Hint: think standard deviation.","pos":242,"type":"cell"}
+{"cell_type":"markdown","id":"d37035","input":"Viewing DataFrame Info\n---\n<a class=\"anchor\" id=\"view\"></a>\nIn the future, we'll be working with really large data sets, and we won't want to view the whole thing at once because it will make our computer crash. To view the first few rows, type head:","pos":29,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"d43773","input":"There is also another file format you can store things in to access them conveniently. It's called a pickle file. Pickle files can be slower and less secure but they are convenient when you are just playing around with things you want to come back to later and no one needs to use the file but you. In addition, they are really nice because they will come into pandas exactly as you left them in pandas...meaning, you don't need to worry about reading in the appropriate header data, etc. To write your dataframe to a pickle file, type:","pos":252,"type":"cell"}
+{"cell_type":"markdown","id":"d451e0","input":"The second way is:","pos":147,"type":"cell"}
+{"cell_type":"markdown","id":"d529f7","input":"### Exercises - students 8\nMake a comparative histogram of male and female student weight.","pos":244,"type":"cell"}
+{"cell_type":"markdown","id":"d549ea","input":"However, big data sets almost always have missing data, and it would be unfortunate to have to get rid of any rows that did contain some missing data. Therefore, we may want to fill that missing data in instead. One option is to fill this data in with 0:","pos":114,"type":"cell"}
+{"cell_type":"markdown","id":"d5c41c","input":"If we wanted to drop rows only if they were missing data in their height or age columns, we could type:","pos":112,"type":"cell"}
+{"cell_type":"markdown","id":"d6f016","input":"### Exercise - sports 4 \nEdit a few of the students' sports by using the sports2.loc() command.","pos":25,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"d70090","input":"One thing that you might want to do at some point is switch the shape of how you view the data. Applying the transpose of the matrix will switch the rows and columns:","pos":84,"slide":"fragment","type":"cell"}
+{"cell_type":"markdown","id":"dacedb","input":"We can disregard rows that are missing ALL values by typing the following. This will only get rid of Steve since only Steve had all of his data missing:","pos":108,"type":"cell"}
+{"cell_type":"markdown","id":"dfb10b","input":"### Exercise - sports 3\nAdd a column to sports2 that includes all the students' summer sport as swimming.","pos":23,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"e2c788","input":"### Exercises - student 3\nMake a frequency chart of the student weights, in decending order of frequency.","pos":234,"type":"cell"}
+{"cell_type":"markdown","id":"e46a8d","input":"If we want to store it in a long term format that others might be able to use and access as well, it's best to store it as a csv file:","pos":248,"type":"cell"}
+{"cell_type":"markdown","id":"e552aa","input":"If we wanted to specify that we wanted the third through 6th rows, we could type:","pos":35,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"e71859","input":"Reading CSV Files\n---\n<a class=\"anchor\" id=\"csv\"></a>\nTypically, we won't be entering data manually. Instead, we'll be reading in large data files. Many data files are stored as CSV files. You can save Excel and Google Sheets files as CSV files. Suppose we want to read in a huge dataset of pregnancies from 2002. We can read it in and type \"index_col = 0\" to denote that we want the first column in the csv file treated as the index in our data frame:","pos":177,"type":"cell"}
+{"cell_type":"markdown","id":"e92a3c","input":"Summary Statistics\n---\n<a class=\"anchor\" id=\"summary\"></a>\nSuppose we want to view the mean, standard deviation, and quartiles of the student data. We can type:","pos":157,"type":"cell"}
+{"cell_type":"markdown","id":"eb1984","input":"If we wanted to view a frequency chart in descending order of frequency, we can type:","pos":161,"type":"cell"}
+{"cell_type":"markdown","id":"eb5578","input":"Series and Plotting\n---\n<a class=\"anchor\" id=\"series\"></a>\nLet's recall our student data:","pos":143,"type":"cell"}
+{"cell_type":"markdown","id":"ecacc4","input":"As another example, suppose we are wondering if the mother's age affects birthweight. Let's first reduce our consideration to just the mother's age and the baby's birth weight columns, and let's drop all rows where at least one of these two pieces of info is missing.","pos":214,"type":"cell"}
+{"cell_type":"markdown","id":"ede420","input":"### Exercise -  sports 2\nCreate a dataframe called sports2 where everything is the same except the index isn't a numeric value but instead the student's first name.","pos":21,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"ef71e0","input":"### Exercise - random 2\nPlot x versus y using dots. Be sure to label axes.","pos":173,"type":"cell"}
+{"cell_type":"markdown","id":"f869d2","input":"### Exercises - students 1\nView the students who weight less than 110. ","pos":230,"type":"cell"}
+{"cell_type":"markdown","id":"fcc67f","input":"To get the column names, type:","pos":52,"slide":"slide","type":"cell"}
+{"cell_type":"markdown","id":"ffeab0","input":"We can change it to integer if all the values can be classified as integers:","pos":140,"type":"cell"}
+{"id":0,"time":1675098501891,"type":"user"}
+{"last_load":1675098505280,"type":"file"}
